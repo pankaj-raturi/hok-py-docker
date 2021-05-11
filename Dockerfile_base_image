@@ -16,6 +16,7 @@ RUN apt upgrade
 
 RUN apt-get install -y tesseract-ocr
 RUN apt-get install -y tesseract-ocr-eng
+RUN apt-get install -y poppler-utils
 
 RUN apt install --no-install-recommends -y \
 	apache2 \

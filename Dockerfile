@@ -10,7 +10,7 @@ COPY apache/* /etc/apache2/sites-available/
 RUN a2ensite flask
 RUN a2dissite 000-default
 
-RUN service apache2 reload
+RUN systemctl reload apache2
 
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]
